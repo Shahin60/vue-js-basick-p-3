@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue.global.js"></script>
+    <style>
+        .card {
+            width: 100px;
+            height: 50px;
+            border: 2px solid rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="shahin">
+
+        <button @click="degeble">height</button>
+        <div v-show="shoHeight"> <input class="card" type="text" name="" id=""></div>
+        <ul>
+            <li v-for="(sali,i) in skil">
+
+                {{sali.name}}-
+                <span v-if="skil.saill<3">beginer</span>
+                <span v-else-if="skil.saill<5">expart</span>
+                <span v-else="skil.saill<8">strong</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
